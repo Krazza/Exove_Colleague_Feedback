@@ -1,0 +1,285 @@
+dn: ou=People,dc=test,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Groups,dc=test,dc=com
+objectClass: organizationalUnit
+ou: Groups
+
+# Add groups
+dn: cn=employee,ou=Groups,dc=test,dc=com
+objectClass: posixGroup
+cn: employee
+gidNumber: 10000
+
+dn: cn=admin,ou=Groups,dc=test,dc=com
+objectClass: posixGroup
+cn: admin
+gidNumber: 20000
+
+dn: cn=manager,ou=Groups,dc=test,dc=com
+objectClass: posixGroup
+cn: manager
+gidNumber: 30000
+
+dn: cn=developer,ou=Groups,dc=test,dc=com
+objectClass: posixGroup
+cn: developer
+gidNumber: 40000
+
+# Add employees to groups
+dn: cn=employee,ou=Groups,dc=test,dc=com
+changetype: modify
+add: memberUid
+memberUid: john
+memberUid: nadia
+memberUid: jagriti
+memberUid: emerson
+memberUid: vijay
+
+# Add devlopers to groups
+dn: cn=developer,ou=Groups,dc=test,dc=com
+changetype: modify
+add: memberUid
+memberUid: laura
+memberUid: santosh
+memberUid: margit
+
+dn: cn=admin,ou=Groups,dc=test,dc=com
+changetype: modify
+add: memberUid
+memberUid: essi
+
+dn: cn=manager,ou=Groups,dc=test,dc=com
+changetype: modify
+add: memberUid
+memberUid: jane
+memberUid: james
+
+
+dn: uid=john,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: john
+sn: Doe
+givenName: John
+cn: John Doe
+displayName: John Doe
+uidNumber: 10000
+gidNumber: 10000
+userPassword: Password123
+gecos: John Doe
+loginShell: /bin/bash
+homeDirectory: /home/ldap/john
+mail: johndoe@test.com
+description: employee
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/john/profile.jpg
+
+dn: uid=laura,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: laura
+sn: Koskinen
+givenName: Laura
+cn: Laura Koskinen
+displayName: Laura Koskinen
+uidNumber: 10011
+gidNumber: 10000
+userPassword: Password123
+gecos: Laura Koskinen
+loginShell: /bin/bash
+homeDirectory: /home/ldap/laura
+mail: laurakoskinen@test.com
+description: developer
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/laura/profile.jpg
+
+
+dn: uid=nadia,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: nadia
+sn: Juthy
+givenName: Nadia
+cn: Nadia Juthy
+displayName: Nadia Juthy
+uidNumber: 10001
+gidNumber: 10000
+userPassword: Password123
+gecos: Nadia Juthy
+loginShell: /bin/bash
+homeDirectory: /home/ldap/nadia
+mail: nadiajuthy@test.com
+description: employee
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/nadia/profile.jpg
+
+dn: uid=kalwar,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: kalwar
+sn: Santosh
+givenName: Kalwar
+cn: Kalwar Santosh
+displayName: Kalwar Santosh
+uidNumber: 10021
+gidNumber: 10000
+userPassword: Password123
+gecos: Kalwar Santosh
+loginShell: /bin/bash
+homeDirectory: /home/ldap/kalwar
+mail: kalwarsantosh@test.com
+description: developer
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/kalwar/profile.jpg
+
+
+dn: uid=jagriti,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: jagriti
+sn: Sharma
+givenName: Jagriti
+cn: Jagriti Sharma
+displayName: Jagriti Sharma
+uidNumber: 10002
+gidNumber: 10000
+userPassword: Password123
+gecos: Jagriti Sharma
+loginShell: /bin/bash
+homeDirectory: /home/ldap/jagriti
+mail: jagritisharma@test.com
+description: employee
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/jagriti/profile.jpg
+
+
+dn: uid=emerson,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: emerson
+sn: Muondo
+givenName: Emerson
+cn: Emerson Muondo
+displayName: Emerson Muondo
+uidNumber: 10003
+gidNumber: 10000
+userPassword: Password123
+gecos: Emerson Muondo
+loginShell: /bin/bash
+homeDirectory: /home/ldap/emerson
+mail: emersonmuondo@test.com
+description: employee
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/emerson/profile.jpg
+
+dn: uid=margit,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: margit
+sn: Tennosaar
+givenName: Margit
+cn: Margit Tennosaar
+displayName: Margit Tennosaar
+uidNumber: 10033
+gidNumber: 10000
+userPassword: Password123
+gecos: Margit Tennosaar
+loginShell: /bin/bash
+homeDirectory: /home/ldap/margit
+mail: margittennosaar@test.com
+description: developer
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/margit/profile.jpg
+
+
+dn: uid=jane,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: jane
+sn: Doe
+givenName: Jane
+cn: Jane Doe
+displayName: Jane Doe
+uidNumber: 10004
+gidNumber: 30000
+userPassword: Password123
+gecos: Jane Doe
+loginShell: /bin/bash
+homeDirectory: /home/ldap/Jane
+mail: janedoe@test.com
+description: manager
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/jane/profile.jpg
+
+
+dn: uid=vijay,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: vijay
+sn: KC
+givenName: Vijay
+cn: Vijay KC
+displayName: Vijay KC
+uidNumber: 10005
+gidNumber: 10000
+userPassword: Password123
+gecos: Vijay KC
+loginShell: /bin/bash
+homeDirectory: /home/ldap/vijay
+mail: vijaykc@test.com
+description: employee
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/vijay/profile.jpg
+
+
+dn: uid=essi,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: essi
+sn: Salomaa
+givenName: Essi
+cn: Essi Salomaa
+displayName: Essi Salomaa
+uidNumber: 10006
+gidNumber: 20000
+userPassword: Password123
+gecos: Essi Salomaa
+loginShell: /bin/bash
+homeDirectory: /home/ldap/essi
+mail: essisalomaa@test.com
+description: admin
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/essi/profile.jpg
+
+
+dn: uid=james,ou=People,dc=test,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: james
+sn: Narraway
+givenName: James
+cn: James Narraway
+displayName: James Narraway
+uidNumber: 10007
+gidNumber: 30000
+userPassword: Password123
+gecos: James Narraway
+loginShell: /bin/bash
+homeDirectory: /home/ldap/james
+mail: jamesnarraway@test.com
+description: manager
+telephoneNumber: +358 45 1234567
+jpegPhoto:< file:///home/ldap/james/profile.jpg

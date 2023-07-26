@@ -1,0 +1,40 @@
+header{
+    background-color: var(--bright-highlight-color);
+}
+
+.mainHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+}
+
+.mainHeader h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--main-background-color);
+    margin-left: 2vw;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+}
+.lang select{
+    font-size: 1.2rem;
+    margin: 2vh;
+}
+
+.headerButton{
+    height: 4.5vh;
+    width: 14vw;
+    margin-right: 2vw;
+    border-width: 0;
+    border-radius: 5px;
+    background-color: var(--main-background-color);
+    color: var(----main-dark-highlight-color);
+    font-size: 1.15rem;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,70 @@
+.login{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.login_header h1 {
+    margin: 0;
+  }
+  .login_header {
+    background-color: rgba(142, 0, 241);
+    color: white;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+.lang select{
+    font-size: 1.2rem;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;   
+    margin: 5vw;
+    padding: 5vh 4vw;
+    width: 55vw;
+    height:55vh;
+    background-color: rgb(218, 198, 232);
+}
+
+.login__form > h1{
+    color:rgba(142, 0, 241);
+    font-size: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.login__form >input{
+    width: 30vw;
+    padding: 3vh;
+    margin-bottom: 5vh;
+    outline: none;
+    border:1px, solid rgba(0,0,0,0.24);
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+.submit__btn{
+    background: rgba(142, 0, 241);
+    border: none;
+    color:white;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 18vw;
+    padding: 2.5vh;
+    margin-bottom: 0 3vh;
+}
+.submit__btn:hover{
+    background: rgb(114, 6, 191);
+}
+.link{
+    margin-top:10px;
+}

@@ -1,0 +1,8 @@
+table {
+  max-width: 100%;
+}
+
+thead tr td {
+  background: orange;
+  padding: 1rem;
+}

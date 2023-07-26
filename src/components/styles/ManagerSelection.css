@@ -1,0 +1,109 @@
+.managerListContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 4vw 5vh 4vw;
+    width: 100%;
+}
+
+.managerListContainer section{
+    background-color: var(--main-soft-dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 7vh;
+}
+
+.managerListContainer section h2{
+    align-self: flex-start;
+    padding-left: 2vw;
+}
+
+.managerList{
+    width: 100%;
+    max-width: 100%;
+    height: 57vh;
+    background-color: var(--main-dark-color);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.managers, .managersNoHeight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4vh;
+    padding: 4vh 0 4vh 0;
+}
+
+.managers{
+    height: 100%;
+}
+
+.requestButton{
+    align-self: flex-end;
+    height: 8vh;
+    width: 40%;
+    border-radius: 5px;
+    border-width: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--bright-highlight-color);
+    color: var(--main-background-color);
+    font-family: 'Montserrat', sans-serif;
+}
+/* MANAGER ENTRY*/
+.managerEntryContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.nameContainer{
+    background-color: var(--main-background-color);
+    width: 55%;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.buttonHolder{
+    display: flex;
+    flex-direction: row;
+    column-gap: 4vw;
+}
+
+.buttonHolder button{
+    width: 7vw;
+    height: 7vh;
+    border: 0;
+    border-radius: 8px;
+}
+
+.replace{
+    background-color: var(--bright-alert-color);
+}
+.replace:hover{
+    background-color: var(--dark-alert-color);
+}
+
+.confirm{
+    background-color: var(--alternative-highlight-color);
+}
+.confirm:hover{
+    background-color: var(--alternative-dark-highlight-color);
+}
+
+.managerName{
+    padding-left: 2vw;
+}

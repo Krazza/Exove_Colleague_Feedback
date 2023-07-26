@@ -1,0 +1,307 @@
+[
+  {
+    "_id": "644bab432b0e9358da961e48",
+    "name": "Sample user--001",
+    "uid": "00000001",
+    "email": "sample@user.com",
+    "role": "employee",
+    "answeredQuestionnaires": [
+      {
+        "questionnaire": [
+          {
+            "_id": "64528e0ca18f0d3aebe3c8af",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b0",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b1",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b2",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b3",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b4",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b5",
+            "answers": []
+          }
+        ],
+        "_id": "64528e0ca18f0d3aebe3c8ae"
+      },
+      {
+        "questionnaire": [
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b7",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b8",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8b9",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8ba",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8bb",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8bc",
+            "answers": []
+          },
+          {
+            "_id": "64528e0ca18f0d3aebe3c8bd",
+            "answers": []
+          }
+        ],
+        "_id": "64528e0ca18f0d3aebe3c8b6"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "1234a56a78aa91f0a12345a6",
+    "name": "emerson",
+    "uid": "00000002",
+    "email": "emerson@user.com",
+    "role": "developer",
+    "answeredQuestionnaires": [
+      {
+        "employeeUid": "00000003",
+        "employeeName": "Kevin",
+        "questionnaire": [
+          {
+            "sectionID": "0",
+            "name": "Quality focus",
+            "answers": [
+              {
+                "questionID": "0",
+                "section": "Quality focus",
+                "sectionID": "0",
+                "question": "The person produces high quality product",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40b4"
+              },
+              {
+                "questionID": "1",
+                "section": "Quality focus",
+                "sectionID": "0",
+                "question": "The person aims to improve the quality of the end result beyond expressed requirements",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40b5"
+              },
+              {
+                "questionID": "2",
+                "section": "Quality focus",
+                "sectionID": "0",
+                "question": "The person is living by the company values (passion, expertise, openness and care)",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40b6"
+              },
+              {
+                "questionID": "3",
+                "section": "Quality focus",
+                "sectionID": "0",
+                "question": "The person is aligned with company best practices",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40b7"
+              },
+              {
+                "questionID": "4",
+                "section": "Quality focus",
+                "sectionID": "0",
+                "question": "The person delivers quality even with limited resources (time, resources, information, guidance)",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40b8"
+              },
+              {
+                "questionID": "5",
+                "section": "Quality focus",
+                "sectionID": "0",
+                "question": "Feedback about the person's quality focus",
+                "isFreeForm": true,
+                "answer": "123",
+                "_id": "645410af81b45dee4cae40b9"
+              }
+            ],
+            "_id": "645410af81b45dee4cae40b3"
+          },
+          {
+            "sectionID": "1",
+            "name": "People skills",
+            "answers": [
+              {
+                "questionID": "0",
+                "section": "People skills",
+                "sectionID": "1",
+                "question": "The person is willingly helping others",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40bb"
+              },
+              {
+                "questionID": "1",
+                "section": "People skills",
+                "sectionID": "1",
+                "question": "The person takes other people's views into consideration",
+                "isFreeForm": false,
+                "answer": "2",
+                "_id": "645410af81b45dee4cae40bc"
+              },
+              {
+                "questionID": "2",
+                "section": "People skills",
+                "sectionID": "1",
+                "question": "The person isn't afraid to ask for help from others",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40bd"
+              },
+              {
+                "questionID": "3",
+                "section": "People skills",
+                "sectionID": "1",
+                "question": "The person has a good attitude towards all the aspects of their work",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40be"
+              },
+              {
+                "questionID": "4",
+                "section": "People skills",
+                "sectionID": "1",
+                "question": "The person shares knowledge openly to others",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410af81b45dee4cae40bf"
+              },
+              {
+                "questionID": "5",
+                "section": "People skills",
+                "sectionID": "1",
+                "question": "Other feedback about the persons people skills",
+                "isFreeForm": true,
+                "answer": "123",
+                "_id": "645410af81b45dee4cae40c0"
+              }
+            ],
+            "_id": "645410af81b45dee4cae40ba"
+          },
+          {
+            "sectionID": "5",
+            "name": "Creativity",
+            "answers": [
+              {
+                "questionID": "0",
+                "section": "Creativity",
+                "sectionID": "5",
+                "question": "The person has good problem-solving skills",
+                "isFreeForm": false,
+                "answer": "2",
+                "_id": "645410b081b45dee4cae40d7"
+              },
+              {
+                "questionID": "1",
+                "section": "Creativity",
+                "sectionID": "5",
+                "question": "The person can provide multiple options with pros and cons on how to solve a problem",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410b081b45dee4cae40d8"
+              },
+              {
+                "questionID": "2",
+                "section": "Creativity",
+                "sectionID": "5",
+                "question": "The person can foresee and prevent negative outcomes of solutions and decisions",
+                "isFreeForm": false,
+                "answer": "1",
+                "_id": "645410b081b45dee4cae40d9"
+              },
+              {
+                "questionID": "3",
+                "section": "Creativity",
+                "sectionID": "5",
+                "question": "Other feedback about creativity",
+                "isFreeForm": true,
+                "answer": "123",
+                "_id": "645410b081b45dee4cae40da"
+              }
+            ],
+            "_id": "645410af81b45dee4cae40d6"
+          },
+          {
+            "sectionID": "6",
+            "name": "General evaluation",
+            "answers": [
+              {
+                "questionID": "0",
+                "section": "General evaluation",
+                "sectionID": "6",
+                "question": "The person's personal strengths are:",
+                "isFreeForm": true,
+                "answer": "123",
+                "_id": "645410b081b45dee4cae40dc"
+              },
+              {
+                "questionID": "1",
+                "section": "General evaluation",
+                "sectionID": "6",
+                "question": "The person should improve in:",
+                "isFreeForm": true,
+                "answer": "123",
+                "_id": "645410b081b45dee4cae40dd"
+              }
+            ],
+            "_id": "645410b081b45dee4cae40db"
+          }
+        ],
+        "_id": "645410af81b45dee4cae40b2"
+      }
+    ],
+    "__v": 0,
+    "feedbackRequests": [
+      {
+        "colleagueName": "Kevin",
+        "colleagueUid": "00000003",
+        "_id": "6453d789087bad7f727918c4"
+      },
+      {
+        "colleagueName": "Vijay",
+        "colleagueUid": "00000004",
+        "_id": "6453d789087bad7f727918c5"
+      },
+      {
+        "colleagueName": "Nadia",
+        "colleagueUid": "00000005",
+        "_id": "6453d789087bad7f727918c6"
+      },
+      {
+        "colleagueName": "Jagriti",
+        "colleagueUid": "00000006",
+        "_id": "6453d789087bad7f727918c7"
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+.signup{
+    display:flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    align-items: center;
+    font-family: "Inter";
+    color:rgba(164, 6, 243, 0.996);
+    background-color: rgb(247, 201, 245); 
+    top: 0;  
+}
+.signup_header {
+    background-color:rgba(164, 6, 243, 0.996);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    width:100%;
+    top:0;
+  }
+  
+.signup__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.signup__form > h1{
+    font-size: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+    
+}
+.signup__form >input{
+    min-width: 380px;
+    padding: 20px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border:1px, solid rgba(0,0,0,0.24);
+    font-family: "Inter";
+    border-radius: 2px;
+    
+}
+.signup__btn{
+    padding:17px 30px;
+    margin-top: 10px;
+    background: rgba(164, 6, 243, 0.996);
+    border: none;
+    color:white;
+    font-size:14px;
+    font-family: "Inter";
+    border-radius: 3px;
+}
+.link{
+    margin-top:10px;
+}

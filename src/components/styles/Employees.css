@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --bright-highlight-color: #8E00F1;
+  --soft-highlight-color: rgba(141, 0, 241, 0.1);
+  --main-soft-dark-color: #F5F5F5;
+  --main-dark-color: #D9D9D9;
+  --main-dark-highlight-color: #000000;
+  --main-background-color: #FFFFFF;
+  --alternative-highlight-color: #3B9993;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5vw;
+}
+
+table {
+  width: 60vw;
+  height: 50vh;
+}
+
+table thead{
+  margin-bottom: 4vh;
+}
+table thead tr th {
+  background-color: var(--main-dark-color);
+  color: var(--main-dark-highlight-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* .table_heading {
+  background-color: rgba(141, 0, 241, 0.1);
+} */
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* 
+      #basic-nav-dropdown ul {
+        display: block;
+        list-style: none;
+        padding-left: 0;
+        margin-top: 10p; 
+      } */
+
+/* #basic-nav-dropdown li {
+        display: block;
+        padding: 5px 10px;
+        color: #333;
+        cursor: pointer;
+      }
+      
+      #basic-nav-dropdown li:hover {
+        background-color: #f5f5f5;
+        
+      } */
+/* .title > a {
+        color: #8E00F1;
+        margin-left:10px;
+        
+      } */
+/* .list{
+        margin-left: 20px;
+        color:black;
+        
+      } */
+.button {
+  margin-left: 50px;
+
+}
+
+.title {
+  margin-right: 20px;
+}
+
+.colleagues-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.list {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.colleagues-list li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.colleagues-list+.nav-item {
+  margin-top: 10px;
+}
+
+.employee_btn {
+  margin-left: 50px;
+  color: black;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.employee_btn:hover {
+  background-color: #3B9993;
+  color: white;
+}
+
+.feedback-requests {
+  /* background-color: #f2f2f2; */
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.colleague-container {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.colleague-container span {
+
+  font-weight: bold;
+  list-style-type: disc;
+}

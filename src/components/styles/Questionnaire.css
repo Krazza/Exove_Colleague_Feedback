@@ -1,0 +1,114 @@
+/* PARENT CLASS SETTINGS */
+.questionnaireContainter{
+    padding: 5vh 3vw 5vh 3vw;
+    width: 100%;
+    row-gap: 5vh;
+}
+
+/* TITLE AND FEEDBACK SUBJECT SETTINGS*/
+.titleAndFeedbackSubject{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedbackSubject{
+    background-color: var(--alternative-highlight-color);
+    color: var(--main-background-color);
+}
+
+/* SECTION INDICATOR/SELECTOR SETTINGS */
+.feedbackSubject{
+    height: 6vh;
+    min-width: 8vw;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--alternative-highlight-color);
+    color: var(--main-background-color);
+}
+
+/* QUESTIONS STYLING */
+.questionnaireSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 4vh;
+}
+
+.questionList{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--soft-highlight-color);
+    height: 62vh;
+    overflow-y: scroll;
+    row-gap: 7vh;
+    justify-content: space-between;
+    margin: 2.5% 0 0 0;
+    padding: 4%;
+}
+
+.questionList::-webkit-scrollbar{
+    width: 1vw;
+}
+
+.questionList::-webkit-scrollbar-track{
+    background-color: var(--main-dark-color);
+}
+
+.questionList::-webkit-scrollbar-thumb{
+    background-color: var(--main-dark-highlight-color);
+    border-radius: 25px;
+}
+
+.radioQuestionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    min-height: 15vh;
+    height: fit-content;
+}
+
+.radioQuestion{
+    min-height: 6vh;
+    padding: 0 2.5% 0 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-dark-color);
+}
+
+.radioInput{
+    min-height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-soft-dark-color);
+}
+
+.textInput{
+    min-height: 12vh;
+    max-width: 100%;
+}
+
+.mySubmitButton{
+    min-height: 6vh;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-width: 0;
+    text-align: center;
+    background-color: var(--alternative-highlight-color);
+    color: var(--main-background-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mySubmitButton:hover {
+    background-color: var(--alternative-soft-highlight-color);
+}

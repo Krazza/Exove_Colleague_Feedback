@@ -1,0 +1,22 @@
+table {
+  max-width: 100%;
+  text-align: left;
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background: orange;
+  width: 100%;
+}
+
+tbody tr:nth-child(2n) {
+  background: #ddd;
+}
+
+th, td {
+  padding: 1rem;
+  width: 150px;
+  text-transform: capitalize;
+  
+}

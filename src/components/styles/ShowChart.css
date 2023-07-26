@@ -1,0 +1,15 @@
+.chart {
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    margin: 6vw;
+    height: 70vh;
+    width: 100vw;
+}
+.chartBtn{
+    margin: 6vw;
+    height: 6vh;
+    width: 8vw;
+    font-size: 1.2rem;
+}

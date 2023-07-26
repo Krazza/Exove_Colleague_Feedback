@@ -1,0 +1,69 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
+const EmployeeList = () => {
+  const [loading, setIsLoading] = useState(false);
+  const [AllEmployees, setAllEmployees] = useState([]);
+  const [selectedColleagues, setSelectedColleagues] = useState([]);
+  const [selectedId, setSelectedId] = useState("");
+
+  useEffect(() => {
+    setIsLoading(true);
+    const fetchAllEmployees = async () => {
+      const res = await axios.get("http://localhost:4000/api/users");
+      const data = res.data;
+      setAllEmployees(data);
+      setIsLoading(false);
+    };
+
+    fetchAllEmployees();
+  }, []);
+
+  const fetchRequestedColleagues = async (employeeId: string) => {
+    setIsLoading(true);
+    const res = await axios.get(
+      `http://localhost:4000/api/questions/${employeeId}`
+    );
+    const data = res.data;
+    setSelectedColleagues(data.feedbackRequests);
+    setSelectedId(employeeId);
+    setIsLoading(false);
+  };
+
+  if (loading) {
+    <h2>Loading...</h2>;
+  }
+  return (
+    <div>
+      <h2>Employees List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Colleagues</th>
+            <th>Reminder</th>
+            <th>Report</th>
+            <th>Create PDF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sample user</td>
+            <td></td>
+            <td>
+              <button>Send Reminder</button>
+            </td>
+            <td>
+              <button>Send Report</button>
+            </td>
+            <td>
+              <button>Cretae PDF</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default EmployeeList;
